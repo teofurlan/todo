@@ -1,12 +1,12 @@
 ---
 import Task from "./Task.astro";
+let index = 0
 ---
 
-<div>
-  <form>
-    <Task taskDescription="Go Shoping" />
-    <Task taskDescription="Refactor Backend"/>
-    <Task taskDescription="Add new feature to app"/>
-	<Task taskDescription='Todo1'
-  </form>
+<div class="m-auto">
+  <form></form>
+  <Task taskDescription="Go Shoping" index={index++}/>
+  <Task taskDescription="Refactor Backend" index={index++}/>
+  <Task taskDescription="Add new feature to app"index={index++} />
+  <Task taskDescription="Todo1" index={index++}/>
 </div>
